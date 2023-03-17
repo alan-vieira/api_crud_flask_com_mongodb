@@ -1,0 +1,17 @@
+[
+    {
+        "_id": 1,
+        "autor": "J.R.R Tolkien",
+        "titulo": "O Senhor dos Anéis - A Sociedade do Anel"
+    },
+    {
+        "_id": 2,
+        "autor": "J.K Howling",
+        "titulo": "Harry Potter e a Pedra Filosofal"
+    },
+    {
+        "_id": 3,
+        "autor": "James Clear",
+        "titulo": "Hábitos Atómicos"
+    }
+]

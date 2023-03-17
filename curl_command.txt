@@ -1,0 +1,29 @@
+CRUD (Create, Read, Update and Delete)
+
+POST
+criar um item
+curl.exe -v -X "POST" -H "Content-Type: application/json" -d "{\"_id\": 4, \"titulo\": \"A Hora da Estrella\" , \"autor\": \"Clarice Lispector\"}" http://127.0.0.1:5000/livros
+
+GET
+acessar todos os itens
+curl.exe -v http://127.0.0.1:5000/livros
+acessar um item
+curl.exe -v http://127.0.0.1:5000:5000/livros/2
+
+PUT
+editar um item
+curl.exe -v -X "PUT" -H "Content-Type: application/json" -d "{\"titulo\": \"Um Sopro de Vida\"}" http://127.0.0.1:5000/livros/4
+
+DELETE
+excluir um item
+curl.exe -v -X "DELETE" http://127.0.0.1:5000/livros/4
+
+Obs.: Para rodar o curl pelo terminal do Ubuntu (WSL), adicione o .exe ao comando.
+ex.: curl.exe -v http://127.0.0.1:5000/livros
+
+
+curl -v -X "POST" -H "Content-Type: application/json" -d "{\"_id\": 1, \"titulo\": \"O Senhor dos Anéis - A Sociedade do Anel\" , \"autor\": \"J.R.R Tolkien\"}" http://192.168.0.151:5000/livros
+
+curl -v -X "POST" -H "Content-Type: application/json" -d "{\"_id\": 2, \"titulo\": \"Harry Potter e a Pedra Filosofal\" , \"autor\": \"J.K Howling\"}" http://192.168.0.151:5000/livros
+
+curl -v -X "POST" -H "Content-Type: application/json" -d "{\"_id\": 3, \"titulo\": \"Hábitos Atômicos\" , \"autor\": \"James Clear\"}" http://192.168.0.151:5000/livros

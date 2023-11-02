@@ -22,7 +22,7 @@ Antes de começar, certifique-se de ter as seguintes dependências instaladas:
 1. Clone o repositório para sua máquina:
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repo.git
+   git clone https://github.com/alan-vieira/api_crud_flask_com_mongodb.git
 
 2. Instale as dependências Python listadas no arquivo
 

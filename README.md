@@ -1,48 +1,61 @@
-# Minha Aplicação de CRUD com Flask e MongoDB
+# 📚 API CRUD: Gestão de Livros com Flask & MongoDB
 
-Este é um projeto simples de uma aplicação CRUD (Create, Read, Update, Delete) criada com Flask e MongoDB. A aplicação permite gerenciar uma coleção de livros.
+## 📖 Sobre o Projeto
 
-## Funcionalidades
+Esta aplicação é um exemplo prático de como construir uma **API RESTful** para gerenciamento de um acervo literário. O objetivo principal é demonstrar a integração entre Python e bancos de dados orientados a documentos (NoSQL), permitindo operações dinâmicas em uma coleção de livros.
 
-- **Criar**: Adicione novos livros à coleção.
-- **Ler**: Consulte a lista completa de livros ou um livro específico por ID.
-- **Atualizar**: Edite o título de um livro existente.
-- **Excluir**: Remova livros da coleção.
+## 🛠️ Funcionalidades Implementadas
 
-## Pré-requisitos
+- **Criar (POST)**: Adiciona novos títulos à coleção do MongoDB.
+- **Ler (GET)**: Consulta a lista completa de livros ou busca um título específico via ID.
+- **Atualizar (PUT)**: Edita informações de registros já existentes.
+- **Excluir (DELETE)**: Remove livros da base de dados de forma definitiva.
 
-Antes de começar, certifique-se de ter as seguintes dependências instaladas:
+## 📂 Estrutura de Arquivos
 
-- Python 3.x
-- Flask 2.2.2
-- PyMongo 4.3.3
+- `app.py`: O script principal que contém as rotas e a lógica da API.
 
-## Instalação
+- `mongopass.py`: Gerenciamento de credenciais para conexão segura com o MongoDB Atlas.
 
-1. Clone o repositório para sua máquina:
+- `livros.json`: Exemplo da estrutura de dados utilizada nos documentos.
+
+- `curl_command.txt`: Documentação de comandos para testes manuais dos endpoints.
+
+- `requirements.txt`: Lista de dependências (Flask 2.2.2, PyMongo 4.3.3).
+
+## 🚀 Como Executar
+
+1. Clone o repositório:
 
    ```bash
    git clone https://github.com/alan-vieira/api_crud_flask_com_mongodb.git
 
-2. Instale as dependências Python listadas no arquivo
-
-   `requirements.txt`:
+2. Instale as bibliotecas necessárias:
 
    ```bash
    pip install -r requirements.txt
 
-3. Configure a variável `mongopass` no arquivo `app.py` com sua URI de conexão MongoDB.
+3. Configure sua URI de conexão no arquivo `mongopass.py`.
 
-## Uso
+4. Inicie o servidor:
 
-1.  Inicie o servidor Flask:
+   ```bash
+   python app.py
 
-    ```bash
-    python app.py
+## 🧪 Testando a API
+
+Você pode utilizar o Postman, Insomnia ou os comandos contidos no arquivo curl_command.txt para validar cada uma das rotas criadas.
  
-2. Use cURL ou uma ferramenta similar para realizar operações CRUD, conforme descrito no README anterior.
+## 📺 Demonstração
 
-## Autores
+Acompanhe a explicação técnica detalhada no YouTube:
 
-| [<img src="https://avatars.githubusercontent.com/alan-vieira" width=115><br><sub>Alan Vieira</sub>](https://github.com/alan-vieira) |
-| :---: |
+🔗 [Assistir vídeo explicativo](https://www.youtube.com/watch?v=neQ1RF-3B4U)
+
+## 👤 Autor
+
+**Alan Vieira** - *Engenheiro de Telecomunicações & Especialista em Dados*
+
+- [LinkedIn](https://www.linkedin.com/in/alansilvavieira)
+
+- [GitHub Portfólio](https://github.com/alan-vieira)
